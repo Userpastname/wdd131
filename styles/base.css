@@ -8,18 +8,18 @@ header{
     color: blanchedalmond;
     background-color: rgb(26, 31, 31);
 }
-
-footer{
-
-    color: blanchedalmond;
-    background-color: rgb(26, 31, 31);
-}
 head span{
     display: block;
 }
 h1{
     padding: 5px;
     margin: 15px;
+}
+h2{
+    padding: 5px;
+    margin: 15px;
+    display:block;
+    text-align: center;
 }
 
 footer h1, header h1{
@@ -47,6 +47,9 @@ footer{
     height: 100px;
     background-color: black;
     border-radius: 10px;
+}
+footer p{
+    color: blanchedalmond;
 }
 
 nav{
