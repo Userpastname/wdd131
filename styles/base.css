@@ -21,6 +21,13 @@ footer h1, header h1{
     text-align: center;
     padding: 0;
 }
+span{
+    display:block;
+    text-align: center;
+    padding: 5px;
+    margin: 15px;
+    font-size: 20px;
+}
 
 p{
     text-align: center;
