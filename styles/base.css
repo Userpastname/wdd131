@@ -45,7 +45,10 @@ nav{
 }
 
 img{
-    height: 280px;
+    display: block;
+    justify-content: space-around;
+    width: 85%;
+    height: auto;
     border-radius: 10px;
     margin: 15px;
 }
@@ -73,13 +76,13 @@ a{
 }
 
 main{
-
+    margin: auto;
     display: grid;
     grid-template-columns: 70% 30%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 70px auto;
     color: black;
-    max-width: 1000px;
-    height: 410px;
+    max-width: 800px;
+    height: 430px;
 }
 
 #name-title{
@@ -99,8 +102,11 @@ main{
 }
 
 #main-content img{
-    height: 125px;
+    height: auto;
+    width: 40%;
+    display: inline-block;
     border-radius: 5px;
+    margin: 15px;
 }
 
 #main-content p, #main-content h1{
@@ -108,9 +114,9 @@ main{
 }
 
 #aside-content{
+    display: flex;
     grid-column: 2/span 1;
     grid-row: 2/span 1;
-
 }
 .card{
     margin: 10px;
