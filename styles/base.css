@@ -3,7 +3,13 @@ body{
     font-family: "Open Sans", sans-serif;
 }
 
-header, footer{
+header{
+    
+    color: blanchedalmond;
+    background-color: rgb(26, 31, 31);
+}
+
+footer{
 
     color: blanchedalmond;
     background-color: rgb(26, 31, 31);
@@ -21,13 +27,15 @@ footer h1, header h1{
     text-align: center;
     padding: 0;
 }
-span{
+#course-title{
     display:block;
     text-align: center;
     padding: 5px;
     margin: 15px;
     font-size: 20px;
 }
+
+
 
 p{
     text-align: center;
@@ -95,10 +103,11 @@ main{
 #name-title{
     grid-column: 1/span 2;
     grid-row: 1/ span 1;
-}
-
-#name-title h1{
+    display:block;
     text-align: center;
+    padding: 5px;
+    margin: 15px;
+    font-size: 30px;
     color: blanchedalmond;
 }
 
