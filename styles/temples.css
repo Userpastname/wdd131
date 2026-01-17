@@ -17,6 +17,12 @@ header h1{
     padding-top: 35px;
 }
 
+
+
+.navigation{
+    display: block;
+}
+
 nav a{
     text-align: center;
     font-size: 25px;
@@ -61,10 +67,10 @@ main{
     margin: auto;
     max-width: 900px;
 }
-
-main h1{
+main h2{
     text-align: center;
 }
+
 
 section{
     display: grid;

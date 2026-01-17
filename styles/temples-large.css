@@ -23,7 +23,10 @@
     .navigation li{
         display: contents;
     }
-    a{
-
+    .navigation{
+        display: flex;
+    }
+    nav{
+    display:flex;
     }
 }
