@@ -1,0 +1,109 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+header{
+    background-color: brown;
+    color: beige;
+    display: block;
+}
+
+header h1{
+
+    height: 50px;
+    margin:0px;
+
+    padding: 1px 15px;
+    padding-top: 35px;
+}
+
+nav a{
+    text-align: center;
+    font-size: 25px;
+    padding: 28px;
+    text-decoration: none;
+    color: beige;
+}
+
+nav a:hover{
+     background-color: beige;
+     color: brown;
+}
+
+.navigation li{
+    display: none;
+}
+
+ul{
+    padding-top: 12.5px;
+    list-style: none;
+}
+
+.open{
+    padding: 0px;
+}
+.open li{
+    display:block;
+    text-align: center;
+}
+
+.open a{
+    display: block;
+    max-width: 900px;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+main{
+    margin: auto;
+    max-width: 900px;
+}
+
+main h1{
+    text-align: center;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+figcaption{
+    text-align: center;
+}
+
+footer{
+    padding: 10px;
+    background-color: brown;
+    color: beige;
+    height: 90px;
+}
+
+footer p{
+    text-align: center;
+
+    padding: 5px;
+}
+
+
+
+#menu::before{
+    content: "☰";
+}
+
+#menu.open::before{
+    content: "X"
+}
+
+#menu{
+    text-decoration: none;
+    display: block;
+    font-size: 50px;
+    position:fixed;
+    top: 30px;
+    right:30px;
+    color: beige;
+}

@@ -1,0 +1,29 @@
+
+
+@media (min-width: 903px){
+    ul{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        height:90px;
+    }
+    header h1{
+        height: 50px;
+        margin:0px;
+        padding: 1px 15px;
+        padding-top: 25px;
+    }
+    #menu{
+        display: none;
+    }
+    .navigation li{
+        display: contents;
+    }
+    a{
+
+    }
+}
