@@ -1,17 +1,21 @@
+:root{
+    --width: 400px;
+}
+
 body{
     font-family: "Open Sans", sans-serif;
     background-color: red;
 }
 header{
     text-align: center;
-    width: 400px;
+    width: var(--width);
     margin: auto;
     background-color: white;
     font-size: 30px;
     color: darkred;
 }
 .hero img{
-    width: 400px;
+    width: var(--width);
     display: block;
     margin:auto;
 }
@@ -24,12 +28,12 @@ section{
 h2{
     text-align: center;
 }
-#middle{
+.middle{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5px;
 }
-#label{
+.label{
     text-align: right;
 }
 
@@ -93,7 +97,7 @@ footer p{
  .of{
     position: relative;
  }
- #inside{
+ .inside{
     position: absolute;
     width: 250px;
     font-size: 30px;
