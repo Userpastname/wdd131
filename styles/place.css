@@ -1,0 +1,108 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: red;
+}
+header{
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    background-color: white;
+    font-size: 30px;
+    color: darkred;
+}
+.hero img{
+    width: 400px;
+    display: block;
+    margin:auto;
+}
+section{
+    background-color: white;
+    padding: 15px;
+    width: 370px;
+    margin: auto;
+}
+h2{
+    text-align: center;
+}
+#middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+#label{
+    text-align: right;
+}
+
+footer{
+    padding: 10px;
+    background-color: white;
+    color: black;
+    height: 90px;
+
+}
+
+footer p{
+    text-align: center;
+}
+
+#icon{
+    width:40px;
+    display: block;
+    margin: auto;
+}
+
+@media (min-width: 1000px) 
+{
+ header{
+    width: 100%;
+ }
+ #icon{
+    display: none;
+ }
+ .hero img{
+    width: 1000px;
+ }
+ .hero{
+    position:relative;
+    width:1000px;
+    margin: auto;
+ }
+ #data{
+
+    position:absolute;
+    width: 230px;
+    padding:15px;
+    left: 35px;
+    top: 15px;
+    padding-top: 60px;
+    background-color: rgba(255, 255, 255, 0.575);
+ }
+ #data h2, #weather h2{
+    background-color: rgba(255, 0, 0, 0.808);
+    color: white;
+ }
+ #weather{
+    position:absolute;
+    width: 230px;
+    bottom: 15px;
+    right: 15px;
+    padding-top: 60px;
+    background-color: rgba(255, 255, 255, 0.575);
+ }
+
+ .of{
+    position: relative;
+ }
+ #inside{
+    position: absolute;
+    width: 250px;
+    font-size: 30px;
+    left: -20px;
+    top: -70px;
+ }
+ .con::after{
+    content: "🌤️";
+ }
+
+
+}
