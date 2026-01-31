@@ -1,0 +1,37 @@
+body{
+    color: black;
+}
+
+table{
+    margin: 10px auto;
+    border: thin solid black;
+    border-collapse: collapse;
+}
+thead tr th{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+thead tr:last-child th{
+    background-color: grey;
+    color: white;
+}
+
+thead tr:last-child th:first-child{
+    background-color: black;
+}
+
+tbody tr:nth-child(even){
+    background-color: lightgray;
+}
+
+tr:first-child th{
+    background-color: black;
+    color: white;
+}
+
+td, th{
+    padding: 7px 15px;
+    border: 1px solid black;
+    margin: none;
+}

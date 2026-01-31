@@ -1,0 +1,32 @@
+footer{
+    padding: 10px;
+    background-color: brown;
+    color: beige;
+    height: 90px;
+}
+
+footer p{
+    text-align: center;
+
+    padding: 5px;
+}
+
+img{
+    margin: auto;
+    display: block;
+    background-color: black;
+    animation: fade 15s;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+h1{
+
+    text-align: center;
+}
