@@ -6,6 +6,27 @@
     --orange-color: #F6AE2D;
 }
 
+.color-scheme{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.color1{
+    background-color: var(--black-color);
+}
+.color2{
+    background-color: var(--grey-color);
+}
+.color3{
+    background-color: var(--orange-color);
+}
+.color4{
+    background-color: var(--red-color);
+}
+.color5{
+    background-color: var(--yellow-color);
+}
+
 body{
     font-family: "Open Sans", sans-serif;
 }
@@ -23,6 +44,10 @@ header{
 
 main{
     display: block;
+}
+
+#heading{
+    font-family: "Oswald";
 }
 
 header a{
