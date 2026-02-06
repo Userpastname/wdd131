@@ -46,7 +46,7 @@ main{
     display: block;
 }
 
-#heading{
+.heading{
     font-family: "Oswald";
 }
 
@@ -81,7 +81,7 @@ footer{
 
 }
 .footer-grid-right{
-    grid-column: 2,span 1;
+    grid-column: 2/span 1;
     font-size: 15px;
     display: block;
     margin: auto;
