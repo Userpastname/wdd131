@@ -1,0 +1,67 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    width: 500px;
+    margin: auto;
+}
+header, footer{
+    background-color: brown;
+    text-align: center;
+    padding: 20px;
+    color: blanchedalmond;
+}
+main{
+    margin: 30px;
+    display: block;
+}
+form{
+    background-color: beige;
+    border-radius: 15px;
+    padding: 15px;
+}
+label{
+    display: block;
+    margin: 15px 0px;
+}
+
+#horis{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#horis input{
+    display: block;
+    margin: auto;    
+}
+
+input,select,textarea{
+    display: block;
+}
+
+input[type="checkbox"]{
+    display: inline;
+}
+
+input[type="date"],textarea,input[type="text"]{
+    width: 375px;
+    padding: 15px;
+}
+
+select{
+    width: 410px;
+    padding: 15px;
+}
+
+select,input[type="date"],textarea,input[type="text"]{
+    border: 2px solid rgb(182, 124, 49);;
+
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(182, 124, 49);
+    border: none;
+    font-size: 30px;
+    color: beige;
+}

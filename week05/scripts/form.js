@@ -4,11 +4,11 @@ const today = new Date();
 year.innerHTML = ` last modified ${document.lastModified}`
 number.innerHTML =`©${today.getFullYear()}`
 
-const productsss = document.querySelector("products")
+const productsss = document.querySelector(".products")
 
 const subButt = document.getElementById("submit"); 
 
-let submissions = number(localStorage.getItem("number-subs")||0)
+let submissions = JSON.parse(localStorage.getItem("number-subs")||0)
 
 const products = [
   {
@@ -40,11 +40,15 @@ const products = [
 
 let inn = "";
 
-for(const prod in products){
-    inn += `<option value="${prod.id()}" >${prod.name()}</option>`;
-}
+products.forEach((element) =>{
+ inn += `<option value="${element.id} name="${element.name}" >${element.name}</option>`;
+})
+   
 
-productsss.textContent = inn
+
+
+
+productsss.innerHTML = inn
 
 subButt.addEventListener('click',function(){
     submissions++;

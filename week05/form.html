@@ -17,12 +17,14 @@
     </header>
     <main>
         <form method="get" action="review.html">
-            <label>Product Name<select name="product" class="products" required>
+            <label>Product Name
+                <select name="product" class="products" required>
                 
-            </select></label>
+                </select>
+            </label>
 
             <label>Overall Rating
-                <div>
+                <div id="horis">
                     <label>☆<input type="radio" name="rating" id="one"></label>
                     <label>☆☆<input type="radio" name="rating" id="two"></label>
                     <label>☆☆☆<input type="radio" name="rating" id="three"></label>
@@ -35,10 +37,10 @@
 
             <label>Which features did you find useful in the product?<div>
                 <p>(check all that apply)</p>
-                <label>Durability<input type="checkbox" id="dura" name="durability" value="Durability"></label>
-                <label>Ease of Use<input type="checkbox" id="ease" name="ease-of-use" value="Ease of Use"></label>
-                <label>Performance<input type="checkbox" id="perf" name="performance" value="Performance"></label>
-                <label>Design<input type="checkbox" id="desi" name="design" value="Design"></label>
+                <label><input type="checkbox" id="dura" name="durability" value="Durability">Durability</label>
+                <label><input type="checkbox" id="ease" name="ease-of-use" value="Ease of Use">Ease of Use</label>
+                <label><input type="checkbox" id="perf" name="performance" value="Performance">Performance</label>
+                <label><input type="checkbox" id="desi" name="design" value="Design">Design</label>
             </div></label>
 
             <label>Written Review (optional)
