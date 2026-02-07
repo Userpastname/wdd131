@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Review</title>
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
         <form method="get" action="review.html">
             <label for="sel">Product Name</label>
                 <select name="product" class="products" id="sel" required>
-                <option >Please Select One...</option>
+                <option disabled selected>Please Select One...</option>
                 </select>
 
 
@@ -34,7 +34,7 @@
                 </div>
 
 
-            <label>Date of Installation <input type="date" id="date-input" name="date" required></label>
+            <label for="date-input">Date of Installation </label><input type="date" id="date-input" name="date" required>
 
             <label for="pluh">Which features did you find useful in the product?</label><div id="pluh">
                 <p>(check all that apply)</p>
