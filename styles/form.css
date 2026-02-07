@@ -65,3 +65,13 @@ input[type="submit"]{
     font-size: 30px;
     color: beige;
 }
+
+@media (min-width:1000px) {
+    body{
+        width: 100%;
+    }
+    main{
+        width:500px;
+        margin: 30px auto;
+    }
+}
