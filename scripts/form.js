@@ -39,6 +39,7 @@ const products = [
 ];
 
 let inn = "";
+inn+="<option disabled selected>Select a Product ...</option>";
 
 products.forEach((element) =>{
  inn += `<option value="${element.id} name="${element.name}" >${element.name}</option>`;
