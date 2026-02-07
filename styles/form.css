@@ -18,12 +18,22 @@ form{
     border-radius: 15px;
     padding: 15px;
 }
-label{
-    display: block;
+input{
+    display: inline-block;
     margin: 15px 0px;
 }
 
+label{
+    display: flex;
+}
+h2{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
 #horis{
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -38,7 +48,11 @@ input,select,textarea{
     display: block;
 }
 
-input[type="checkbox"]{
+#check{
+    display: inline;
+}
+
+#check input, #check label{
     display: inline;
 }
 
