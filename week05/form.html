@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label>Product Name<select name="product" class="products" required>
+                
+            </select></label>
+
+            <label>Overall Rating
+                <div>
+                    <label>☆<input type="radio" name="rating" id="one"></label>
+                    <label>☆☆<input type="radio" name="rating" id="two"></label>
+                    <label>☆☆☆<input type="radio" name="rating" id="three"></label>
+                    <label>☆☆☆☆<input type="radio" name="rating" id="four"></label>
+                    <label>☆☆☆☆☆<input type="radio" name="rating" id="five"></label>
+                </div>
+            </label>
+
+            <label>Date of Installation <input type="date" id="date-input" name="date" required></label>
+
+            <label>Which features did you find useful in the product?<div>
+                <p>(check all that apply)</p>
+                <label>Durability<input type="checkbox" id="dura" name="durability" value="Durability"></label>
+                <label>Ease of Use<input type="checkbox" id="ease" name="ease-of-use" value="Ease of Use"></label>
+                <label>Performance<input type="checkbox" id="perf" name="performance" value="Performance"></label>
+                <label>Design<input type="checkbox" id="desi" name="design" value="Design"></label>
+            </div></label>
+
+            <label>Written Review (optional)
+                <textarea name="reviewed" id="review"></textarea>
+            </label>
+
+            <label>User Name (optional) 
+                <input type="text" id="name" name="name">
+            </label>
+
+            <input id="submit" type="submit" value="Post Review">
+
+        </form>
+    </main>
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            Miles Wendler
+            Washington - USA
+        </p>
+        <p id="last-modified">
+
+        </p>
+    </footer>
+</body>
+</html>
