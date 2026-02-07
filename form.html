@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
+    <meta name="description" content="form for learning how to make forms by making a form for the form project about making fomrs">
+    <meta name="author" content="Miles Wendler">
 </head>
 <body>
     <header>
@@ -17,19 +18,19 @@
     </header>
     <main>
         <form method="get" action="review.html">
-            <label>Product Name
-                <select name="product" class="products" required>
-                
+            <label for="sel">Product Name</label>
+                <select name="product" class="products" id="sel" required>
+                <option >Please Select One...</option>
                 </select>
-            </label>
+
 
             <label for="horis">Overall Rating</label>
                 <div id="horis">
-                    <label>☆<input type="radio" name="rating" id="one"></label>
-                    <label>☆☆<input type="radio" name="rating" id="two"></label>
-                    <label>☆☆☆<input type="radio" name="rating" id="three"></label>
-                    <label>☆☆☆☆<input type="radio" name="rating" id="four"></label>
-                    <label>☆☆☆☆☆<input type="radio" name="rating" id="five"></label>
+                    <label for="one">☆</label><input type="radio" name="rating"value="one" id="one"required>
+                    <label for="two">☆☆</label><input type="radio" name="rating"value="two" id="two"required>
+                    <label for="three">☆☆☆</label><input type="radio" name="rating"value="three" id="three"required>
+                    <label for="four">☆☆☆☆</label><input type="radio" name="rating"value="four" id="four"required>
+                    <label for="five">☆☆☆☆☆</label><input type="radio" name="rating"value="five" id="five"required>
                 </div>
 
 
@@ -37,19 +38,19 @@
 
             <label for="pluh">Which features did you find useful in the product?</label><div id="pluh">
                 <p>(check all that apply)</p>
-                <label><input type="checkbox" id="dura" name="durability" value="Durability">Durability</label>
-                <label><input type="checkbox" id="ease" name="ease-of-use" value="Ease of Use">Ease of Use</label>
-                <label><input type="checkbox" id="perf" name="performance" value="Performance">Performance</label>
-                <label><input type="checkbox" id="desi" name="design" value="Design">Design</label>
+                <input type="checkbox" id="dura" name="durability" value="Durability"><label for="dura">Durability</label>
+                <input type="checkbox" id="ease" name="ease-of-use" value="Ease of Use"><label for="ease">Ease of Use</label>
+                <input type="checkbox" id="perf" name="performance" value="Performance"><label for="perf">Performance</label>
+                <input type="checkbox" id="desi" name="design" value="Design"><label for="desi">Design</label>
             </div>
 
-            <label>Written Review (optional)
+            <label for="review">Written Review (optional)</label>
                 <textarea name="reviewed" id="review"></textarea>
-            </label>
+            
 
-            <label>User Name (optional) 
+            <label for="name">User Name (optional) </label>
                 <input type="text" id="name" name="name">
-            </label>
+            
 
             <input id="submit" type="submit" value="Post Review">
 
