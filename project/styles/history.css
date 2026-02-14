@@ -114,6 +114,10 @@ main h1{
     z-index: 5;
 }
 
+.sources nav{
+    display: block;
+}
+
 #info{
     background-color: rgba(209, 209, 209, 0.082);
     display: grid;

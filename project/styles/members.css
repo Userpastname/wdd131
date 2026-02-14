@@ -74,6 +74,7 @@ footer h2{
     display: flex;
     justify-content: center;
     margin-top: 35px;
+    max-width: 100%;
     border-left: 1px solid #170312;
 }
 
@@ -143,6 +144,9 @@ main h1{
     right:30px;
     color: #fffc59;
 }
+.sources nav{
+    display: block;
+}
 
 .navigation{
     display: block;
@@ -189,7 +193,7 @@ ul{
 #info img{
     max-width: 100%;
     max-height: 100%;
-    height: fit-content;
+    width: fit-content;
 }
 #info div{
     width: 300px;
@@ -212,7 +216,6 @@ ul{
 .camer,.sheph,.kimth,.corrn{
     position:absolute;
 }
-
 
 
 .drummer,.guitarist,.singer,.bassist{
@@ -283,7 +286,6 @@ ul{
         width: 25%;
     }
     nav{
-    
         display: flex;
     };
     .footer-icon{
