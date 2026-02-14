@@ -1,0 +1,277 @@
+:root{
+    --black-color: #170312;
+    --grey-color: rgb(99, 104, 109);
+    --dark-grey: #17181a;
+    --red-color: #F40000;
+    --yellow-color: #FFFB46;
+    --orange-color: #F6AE2D;
+    --dark-orange-color: #3d2e11;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--dark-grey);
+}
+header, footer{
+    box-shadow: 0 0 150px 5px rgb(179, 172, 69);
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+}
+header{
+    background-color: var(--yellow-color);
+    display:flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 35px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald",sans-serif;
+}
+header a{
+    color: black;
+    text-decoration: none;
+
+}
+header h1{
+    font-size: 30px;
+    text-align: center;
+    width: 110px;
+    padding: 30px 15px;
+}
+
+
+footer img{
+    width: 30px;
+}
+
+.footer-icon{
+    width:150px;
+}
+
+.media img{
+    width: 45px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--yellow-color);
+    font-family: "Oswald",sans-serif;
+}
+footer h2{
+    margin: 5px 0px;
+}
+.footer-grid-left{
+    grid-column: 1/span 1;
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+
+}
+.footer-grid-right{
+    grid-column: 2/span 1;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    border-left: 1px solid #170312;
+}
+
+.sources p,.sources a{
+    color: var(--dark-orange-color);
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer-grid-bottom{
+    grid-column: 1/ span 2;
+    text-align: center;
+    color: var(--dark-orange-color);
+    font-family: "Open Sans", sans-serif;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.icon{
+    position: relative;
+    width: 150px;
+    z-index: 5;
+}
+
+#menu::before{
+    content: "☰";
+}
+
+#menu.open::before{
+    content: "X"
+}
+
+main h1{
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+    color: rgb(255, 137, 59);
+    background-color: rgba(0, 0, 0, 0.692);
+    box-shadow: 0 0 50px 10px  rgb(15, 15, 15);
+    font-family: "Oswald",sans-serif;
+}
+#title{
+    position: relative;
+}
+
+#visited{
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    position:absolute;
+    top: 175px;
+    left:30px;
+    color: #fffc59;
+}
+
+#menu{
+    text-decoration: none;
+    display: block;
+    font-size: 50px;
+    position:absolute;
+    top: 175px;
+    right:30px;
+    color: #fffc59;
+}
+
+.navigation{
+    display: block;
+}
+.navigation li{
+    display: none;
+}
+.open li{
+    display:block;
+    text-align: center;
+}
+ul{
+    list-style-position: none;
+    margin: 0;
+    padding: 0;
+}
+.mobile-img{
+    width: 100%;
+    height: auto;
+}
+
+.open a{
+    font-size: 30px;
+    margin: 10px 0;
+    display: block;
+    max-width: 900px;
+    text-align: center;
+    color: #dddddd;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.692);
+    box-shadow: 0 0 50px 10px  rgb(15, 15, 15);
+}
+
+.closed{
+    display: none;
+}
+
+#info{
+    background-color: rgba(209, 209, 209, 0.082);
+    display: grid;
+    width: 460px;
+    margin: auto;
+}
+main img{
+    height: 300px;
+}
+#info div{
+    margin: 5px;
+    display: block;
+
+    text-align: center;
+}
+.box{
+    background-color: rgba(209, 209, 209, 0.795);
+    border-radius: 45px;
+}
+.box h2, .box p{
+    padding:0px 15px;
+}
+#select-photo{
+    display: none;
+}
+
+.camer,.sheph,.kimth,.corrn{
+    position:absolute;
+}
+
+
+
+.drummer,.guitarist,.singer,.bassist{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    color: #2e2d2b;
+    bottom: 100px;
+    text-align: center;
+    background-color: #ddddddbb;
+    border-radius: 5px;
+}
+
+.portrait h2{
+    margin-bottom: 0;
+}
+.portrait p{
+    margin-top: 0px;
+}
+
+@media (min-width:1000px) {
+    #info{
+        background-color: rgba(209, 209, 209, 0.082);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        max-width: 1020px;
+    }
+    #info img{
+        max-width: 100%;
+        max-height: 100%;
+        height: fit-content;
+    }
+    .box{
+        align-content: center;
+    }
+    .mobile-img{
+        display: none;
+    }
+    #menu{
+        display: none;
+    }
+    #select-photo{
+        width: 100%;
+        display: flex;
+
+    }
+    .portrait{
+        width: 100%;
+        height: auto;
+    }
+    .portrait img{
+        width: 100%;
+        height: auto;
+
+    }
+    .navigation{
+        display: none;
+    }
+    #select-photo a{
+        width: 25%;
+    }
+    nav{
+    
+        display: flex;
+    };
+}

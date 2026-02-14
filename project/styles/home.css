@@ -1,0 +1,226 @@
+:root{
+    --black-color: #170312;
+    --grey-color: rgb(99, 104, 109);
+    --dark-grey: #17181a;
+    --red-color: #F40000;
+    --yellow-color: #FFFB46;
+    --orange-color: #F6AE2D;
+    --dark-orange-color: #3d2e11;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--dark-grey);
+}
+header, footer{
+    box-shadow: 0 0 150px 5px rgb(179, 172, 69);
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+}
+header{
+    background-color: var(--yellow-color);
+    display:flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 35px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald",sans-serif;
+}
+header a{
+    color: black;
+    text-decoration: none;
+
+}
+header h1{
+    font-size: 30px;
+    text-align: center;
+    width: 110px;
+    padding: 30px 15px;
+}
+
+
+footer img{
+    width: 30px;
+}
+
+.footer-icon{
+    width:150px;
+}
+
+.media img{
+    width: 45px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--yellow-color);
+    font-family: "Oswald",sans-serif;
+}
+footer h2{
+    margin: 5px 0px;
+}
+.footer-grid-left{
+    grid-column: 1/span 1;
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+
+}
+.footer-grid-right{
+    grid-column: 2/span 1;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    border-left: 1px solid #170312;
+}
+
+.sources p, .sources a{
+    color: var(--dark-orange-color);
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer-grid-bottom{
+    grid-column: 1/ span 2;
+    text-align: center;
+    color: var(--dark-orange-color);
+    font-family: "Open Sans", sans-serif;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+.hero{
+    position: relative;
+    display: block;
+    margin: auto;
+    z-index: 0;
+}
+
+#landscape{
+    display: none;
+}
+
+#mobile{
+    width: 700px;
+}
+
+.icon{
+    position: relative;
+    width: 150px;
+    z-index: 5;
+}
+
+.big{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#over{
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+}
+
+#over h1{
+    display: block;
+    height: 90px;
+    line-height: 80px;
+    margin: auto;
+    width: 740px;
+    font-size: 120px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0;
+    color: rgb(238, 0, 0);
+    font-family: "Oswald",sans-serif;
+    background-color: rgba(31, 31, 31, 0.911);
+    box-shadow: 0 0 150px 60px  rgb(15, 15, 15);
+}
+
+#quotes{
+    display: grid;
+    width: 50%;
+    height: 1400px;
+    margin: auto;
+    grid-template-columns: 1fr;
+}
+.quote{
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+.quote h2{
+    font-family: "Oswald",sans-serif;
+    margin: 0;
+}
+label{
+    margin: auto;
+}
+.quote h2,label{
+    display: flex;
+    color: rgb(255, 236, 210);
+    border-radius: 25%;
+    background-color: rgba(19, 19, 19, 0.719);
+    box-shadow: 0 0 50px 60px  rgba(15, 15, 15, 0.678);
+    width: fit-content;
+    padding: 5px;
+}
+@media (min-width: 1000px) {
+    #mobile{
+        display: none;
+    }
+    #landscape{
+        display:inline;
+        margin-left: 50%;
+        transform: translate(-50%,0);
+        width: 1200px;
+        height: auto;
+    }
+    #quotes{
+        display: grid;
+        width: 80%;
+        height: 700px;
+        margin: auto;
+        grid-template-columns: 1fr 1fr;
+    }
+    .quote:last-child{
+        grid-column: span 2;
+    }
+
+    .quote{
+        align-content: center;
+        text-align: center;
+        margin: auto;
+        width: 80%;
+    }
+    .quote h2{
+        font-family: "Oswald",sans-serif;
+        margin: 0;
+    }
+    label{
+        margin: auto;
+    }
+    .quote h2,label{
+        display: flex;
+        color: rgb(255, 236, 210);
+        border-radius: 25%;
+        background-color: rgba(19, 19, 19, 0.582);
+        box-shadow: 0 0 50px 60px  rgba(15, 15, 15, 0.541);
+        width: fit-content;
+        padding: 5px;
+    }
+}
+
+
+
