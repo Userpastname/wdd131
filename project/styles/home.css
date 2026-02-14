@@ -52,6 +52,10 @@ footer img{
     width: 30px;
 }
 
+.sources nav{
+    display: block;
+}
+
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -95,7 +99,12 @@ a:hover{
 }
 
 
-
+#info img{
+    max-width: 100%;
+    max-height: 100%;
+    width:auto;
+    height: auto;
+}
 
 
 .hero{
