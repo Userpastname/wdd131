@@ -25,7 +25,7 @@ let bruh = "";
 
 const counter = document.getElementById("visited")
 
-counter.textContent = `members visited: ${calcAndUpdateVisits}`;
+counter.textContent = `members visited: ${calcAndUpdateVisits()}`;
 
 let cornellVisited = JSON.parse(localStorage.getItem("cornell")||0)
 let theyilVisited = JSON.parse(localStorage.getItem("theyil")||0)
@@ -39,13 +39,14 @@ function calcAndUpdateVisits(){
     shepherdVisited = JSON.parse(localStorage.getItem("shepherd")||0)
     cameronVisited = JSON.parse(localStorage.getItem("cameron")||0)
 
-    let visits = cornellVisited + theyilVisited + shepherdVisited + cameronVisited;
+    let visits = 0;
+    visits = cornellVisited + theyilVisited + shepherdVisited + cameronVisited;
     return visits
 }
 
 cornell.addEventListener("click",()=>{
     localStorage.setItem("cornell","1")
-    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
+    counter.textContent = `members visited: ${calcAndUpdateVisits()}`;
     bruh =`
             <div>
                 <img src="images/members/webp/parents.webp" alt="Karen Cornell and Edward Boyle's highschool photos collaged side by side">
@@ -73,7 +74,7 @@ cornell.addEventListener("click",()=>{
 })
 theyil.addEventListener("click",()=>{
     localStorage.setItem("theyil","1")
-    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
+    counter.textContent = `members visited: ${calcAndUpdateVisits()}`;
     infrr.innerHTML=`
                 <div>
                 <img src="images/members/webp/kimthyil.webp" alt="young theyil" loading="lazy">
@@ -85,7 +86,7 @@ theyil.addEventListener("click",()=>{
 })
 shepherd.addEventListener("click",()=>{
     localStorage.setItem("shepherd","1")
-    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
+    counter.textContent = `members visited: ${calcAndUpdateVisits()}`;
     infrr.innerHTML=`
                 <div>
                 <img src="images/members/webp/bensheppp.webp" alt="young ben shepherd" loading="lazy">
@@ -97,7 +98,7 @@ shepherd.addEventListener("click",()=>{
 })
 cameron.addEventListener("click",()=>{
     localStorage.setItem("cameron","1")
-    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
+    counter.textContent = `members visited: ${calcAndUpdateVisits()}`;
     infrr.innerHTML=`
             <div>
                 <img src="images/members/webp/young-cameron.webp" alt="young camerons band kiss" loading="lazy">
@@ -122,7 +123,7 @@ const camy = document.querySelector(".cameron")
 
 cory.addEventListener("click",()=>{
     localStorage.setItem("cornell","1")
-    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
+    counter.textContent = `members visited: ${calcAndUpdateVisits()}`;
     infrr.innerHTML=`
             <div>
                 <img src="images/members/webp/parents.webp" alt="Karen Cornell and Edward Boyle's highschool photos collaged side by side">
@@ -151,7 +152,7 @@ cory.addEventListener("click",()=>{
 })
 theyily.addEventListener("click",()=>{
     localStorage.setItem("theyil","1")
-    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
+    counter.textContent = `members visited: ${calcAndUpdateVisits()}`;
     infrr.innerHTML=`
                 <div>
                 <img src="images/members/webp/kimthyil.webp" alt="young theyil" loading="lazy">
@@ -163,7 +164,7 @@ theyily.addEventListener("click",()=>{
 })
 shepy.addEventListener("click",()=>{
     localStorage.setItem("shepherd","1")
-    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
+    counter.textContent = `members visited: ${calcAndUpdateVisits()}`;
     infrr.innerHTML=`
                 <div>
                 <img src="images/members/webp/bensheppp.webp" alt="young ben shepherd" loading="lazy">
@@ -175,7 +176,7 @@ shepy.addEventListener("click",()=>{
 })
 camy.addEventListener("click",()=>{
     localStorage.setItem("cameron","1")
-    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
+    counter.textContent = `members visited: ${calcAndUpdateVisits()}`;
     infrr.innerHTML=`
             <div>
                 <img src="images/members/webp/young-cameron.webp" alt="young camerons band kiss" loading="lazy">
