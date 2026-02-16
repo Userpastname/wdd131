@@ -129,7 +129,7 @@ main h1{
     display: block;
     font-size: 20px;
     position:absolute;
-    top: 225px;
+    top: 200px;
     color: #fffc59;
     left: 50%;
     transform: translate(-87.5px,0);
@@ -140,7 +140,7 @@ main h1{
     display: block;
     font-size: 50px;
     position:absolute;
-    top: 175px;
+    top: 150px;
     right:30px;
     color: #fffc59;
 }
@@ -157,6 +157,12 @@ main h1{
 .open li{
     display:block;
     text-align: center;
+}
+.chris-drop,.matt-drop,.ben-drop,.kim-drop{
+    width: 100%;
+}
+.chris-drop a,.matt-drop a,.ben-drop a,.kim-drop a{
+    padding: 0px 50px;
 }
 ul{
     list-style-position: none;

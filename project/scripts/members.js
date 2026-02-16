@@ -79,7 +79,7 @@ cornell.addEventListener("click",()=>{
 })
 theyil.addEventListener("click",()=>{
     viser.they = 1;
-    localStorage.setItem("theyil",1)
+    localStorage.setItem("theyil",JSON.stringify(1))
     visit = 0;
     for(let elemt of viser){
         visit+=elemt;
