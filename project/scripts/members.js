@@ -23,35 +23,23 @@ let infrr = document.getElementById("info")
 
 let bruh = "";
 
-let visit = JSON.parse(localStorage.getItem("visits")||0)
-
-let cornellVisited = JSON.parse(localStorage.getItem("cornell")||0)
-let theyilVisited = JSON.parse(localStorage.getItem("theyil")||0)
-let shepherdVisited = JSON.parse(localStorage.getItem("shepherd")||0)
-let cameronVisited = JSON.parse(localStorage.getItem("cameron")||0)
-
 const counter = document.getElementById("visited")
 
-counter.textContent = `members visited: ${visit}`;
+counter.textContent = `members visited: ${calcAndUpdateVisits}`;
 
-let viser =[
-    corny = cornellVisited,
-    they = theyilVisited,
-    bepherd = shepherdVisited,
-    camatt = cameronVisited
-]
+function calcAndUpdateVisits(){
+    let cornellVisited = JSON.parse(localStorage.getItem("cornell")||0)
+    let theyilVisited = JSON.parse(localStorage.getItem("theyil")||0)
+    let shepherdVisited = JSON.parse(localStorage.getItem("shepherd")||0)
+    let cameronVisited = JSON.parse(localStorage.getItem("cameron")||0)
 
-
+    let visits = cornellVisited + theyilVisited + shepherdVisited + cameronVisited;
+    return visits
+}
 
 cornell.addEventListener("click",()=>{
-    viser.corny = 1;
-    localStorage.setItem("cornell",1)
-    visit = 0;
-    for(let elemt of viser){
-        visit+=elemt;
-    }
-    localStorage.setItem("visits",JSON.stringify(visit))
-    counter.textContent = `members visited: ${visit}`;
+    localStorage.setItem("cornell","1")
+    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
     bruh =`
             <div>
                 <img src="images/members/webp/parents.webp" alt="Karen Cornell and Edward Boyle's highschool photos collaged side by side">
@@ -78,14 +66,8 @@ cornell.addEventListener("click",()=>{
     infrr.innerHTML= bruh;
 })
 theyil.addEventListener("click",()=>{
-    viser.they = 1;
-    localStorage.setItem("theyil",JSON.stringify(1))
-    visit = 0;
-    for(let elemt of viser){
-        visit+=elemt;
-    }
-    localStorage.setItem("visits",JSON.stringify(visit))
-    counter.textContent = `members visited: ${visit}`;
+    localStorage.setItem("theyil","1")
+    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
     infrr.innerHTML=`
                 <div>
                 <img src="images/members/webp/kimthyil.webp" alt="young theyil" loading="lazy">
@@ -96,14 +78,8 @@ theyil.addEventListener("click",()=>{
             </div>`
 })
 shepherd.addEventListener("click",()=>{
-    viser.bepherd = 1;
-    localStorage.setItem("shepherd",1)
-    visit = 0;
-    for(let elemt of viser){
-        visit+=elemt;
-    }
-    localStorage.setItem("visits",JSON.stringify(visit))
-    counter.textContent = `members visited: ${visit}`;
+    localStorage.setItem("shepherd","1")
+    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
     infrr.innerHTML=`
                 <div>
                 <img src="images/members/webp/bensheppp.webp" alt="young ben shepherd" loading="lazy">
@@ -114,14 +90,8 @@ shepherd.addEventListener("click",()=>{
             </div>` 
 })
 cameron.addEventListener("click",()=>{
-    viser.camatt = 1;
-    localStorage.setItem("cameron",1)
-    visit = 0;
-    for(let elemt of viser){
-        visit+=elemt;
-    }
-    localStorage.setItem("visits",JSON.stringify(visit))
-    counter.textContent = `members visited: ${visit}`;
+    localStorage.setItem("cameron","1")
+    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
     infrr.innerHTML=`
             <div>
                 <img src="images/members/webp/young-cameron.webp" alt="young camerons band kiss" loading="lazy">
@@ -145,14 +115,8 @@ const shepy = document.querySelector(".shepherd")
 const camy = document.querySelector(".cameron")
 
 cory.addEventListener("click",()=>{
-    viser.corny = 1;
-    localStorage.setItem("cornell",1)
-    visit = 0;
-    for(let elemt of viser){
-        visit+=elemt;
-    }
-    localStorage.setItem("visits",JSON.stringify(visit))
-    counter.textContent = `members visited: ${visit}`;
+    localStorage.setItem("cornell","1")
+    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
     infrr.innerHTML=`
             <div>
                 <img src="images/members/webp/parents.webp" alt="Karen Cornell and Edward Boyle's highschool photos collaged side by side">
@@ -180,15 +144,9 @@ cory.addEventListener("click",()=>{
 
 })
 theyily.addEventListener("click",()=>{
-    viser.they = 1;
-    localStorage.setItem("theyil",1)
-    visit = 0;
-    for(let elemt of viser){
-        visit+=elemt;
-    }
-    localStorage.setItem("visits",JSON.stringify(visit))
-    counter.textContent = `members visited: ${visit}`;
-        infrr.innerHTML=`
+    localStorage.setItem("theyil","1")
+    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
+    infrr.innerHTML=`
                 <div>
                 <img src="images/members/webp/kimthyil.webp" alt="young theyil" loading="lazy">
             </div>
@@ -198,15 +156,9 @@ theyily.addEventListener("click",()=>{
             </div>`
 })
 shepy.addEventListener("click",()=>{
-    viser.bepherd = 1;
-    localStorage.setItem("shepherd",1)
-    visit = 0;
-    for(let elemt of viser){
-        visit+=elemt;
-    }
-    localStorage.setItem("visits",JSON.stringify(visit))
-    counter.textContent = `members visited: ${visit}`;
-        infrr.innerHTML=`
+    localStorage.setItem("shepherd","1")
+    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
+    infrr.innerHTML=`
                 <div>
                 <img src="images/members/webp/bensheppp.webp" alt="young ben shepherd" loading="lazy">
             </div>
@@ -216,15 +168,9 @@ shepy.addEventListener("click",()=>{
             </div>` 
 })
 camy.addEventListener("click",()=>{
-    viser.camatt = 1;
-    localStorage.setItem("cameron",1)
-    visit = 0;
-    for(let elemt of viser){
-        visit+=elemt;
-    }
-    localStorage.setItem("visits",JSON.stringify(visit))
-    counter.textContent = `members visited: ${visit}`;
-        infrr.innerHTML=`
+    localStorage.setItem("cameron","1")
+    counter.textContent = `members visited: ${calcAndUpdateVisits}`;
+    infrr.innerHTML=`
             <div>
                 <img src="images/members/webp/young-cameron.webp" alt="young camerons band kiss" loading="lazy">
             </div>
