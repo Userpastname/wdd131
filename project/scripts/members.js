@@ -27,11 +27,17 @@ const counter = document.getElementById("visited")
 
 counter.textContent = `members visited: ${calcAndUpdateVisits}`;
 
+let cornellVisited = JSON.parse(localStorage.getItem("cornell")||0)
+let theyilVisited = JSON.parse(localStorage.getItem("theyil")||0)
+let shepherdVisited = JSON.parse(localStorage.getItem("shepherd")||0)
+let cameronVisited = JSON.parse(localStorage.getItem("cameron")||0)
+
 function calcAndUpdateVisits(){
-    let cornellVisited = JSON.parse(localStorage.getItem("cornell")||0)
-    let theyilVisited = JSON.parse(localStorage.getItem("theyil")||0)
-    let shepherdVisited = JSON.parse(localStorage.getItem("shepherd")||0)
-    let cameronVisited = JSON.parse(localStorage.getItem("cameron")||0)
+
+    cornellVisited = JSON.parse(localStorage.getItem("cornell")||0)
+    theyilVisited = JSON.parse(localStorage.getItem("theyil")||0)
+    shepherdVisited = JSON.parse(localStorage.getItem("shepherd")||0)
+    cameronVisited = JSON.parse(localStorage.getItem("cameron")||0)
 
     let visits = cornellVisited + theyilVisited + shepherdVisited + cameronVisited;
     return visits
