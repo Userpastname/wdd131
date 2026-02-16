@@ -6,6 +6,7 @@
     --yellow-color: #FFFB46;
     --orange-color: #F6AE2D;
     --dark-orange-color: #3d2e11;
+    --title-color: rgb(255, 137, 59);
 }
 body{
     font-family: "Open Sans", sans-serif;
@@ -14,7 +15,6 @@ body{
 header, footer{
     box-shadow: 0 0 150px 5px rgb(179, 172, 69);
     max-width: 1000px;
-    display: block;
     margin: auto;
 }
 header{
@@ -25,7 +25,6 @@ header{
     margin-top: 35px;
     justify-content: center;
     align-items: center;
-    font-family: "Oswald",sans-serif;
 }
 header a{
     color: black;
@@ -38,11 +37,6 @@ header h1{
     width: 110px;
     padding: 30px 15px;
 }
-
-footer img{
-    width: 30px;
-}
-
 .footer-icon{
     width:100px;
 }
@@ -51,16 +45,17 @@ footer img{
     width: 30px;
 }
 
-
+header,footer,main h1{
+    font-family: "Oswald",sans-serif;
+}
 
 footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--yellow-color);
-    font-family: "Oswald",sans-serif;
 }
 footer h2{
-    margin: 5px 0px;
+    margin: 5px 0;
 }
 .footer-grid-left{
     grid-column: 1/span 1;
@@ -99,10 +94,9 @@ main h1{
     text-align: center;
     margin: 0;
     margin-top: 30px;
-    color: rgb(255, 137, 59);
+    color: var(--title-color);
     background-color: rgba(0, 0, 0, 0.692);
     box-shadow: 0 0 50px 10px  rgb(15, 15, 15);
-    font-family: "Oswald",sans-serif;
 }
 #title{
     position: relative;
@@ -158,17 +152,10 @@ main img{
 
 @media (min-width:1000px) {
     #info{
-        background-color: rgba(209, 209, 209, 0.082);
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 90%;
-        margin: auto;
-        max-width: 1020px;
     }
     .icon{
-        position: relative;
         width: 150px;
-        z-index: 5;
     }
     .footer-icon{
         width:150px;

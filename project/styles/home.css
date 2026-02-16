@@ -14,7 +14,6 @@ body{
 header, footer{
     box-shadow: 0 0 150px 5px rgb(179, 172, 69);
     max-width: 1000px;
-    display: block;
     margin: auto;
 }
 header{
@@ -25,7 +24,6 @@ header{
     margin-top: 35px;
     justify-content: center;
     align-items: center;
-    font-family: "Oswald",sans-serif;
 }
 header a{
     color: black;
@@ -60,7 +58,6 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--yellow-color);
-    font-family: "Oswald",sans-serif;
 }
 footer h2{
     margin: 5px 0px;
@@ -98,14 +95,15 @@ a:hover{
     text-decoration: underline;
 }
 
-
+header,footer,#over h1, .quote h2{
+    font-family: "Oswald",sans-serif;
+}
 
 
 
 .hero{
     position: relative;
-    display: block;
-    margin: auto;
+    display: inline;
     z-index: 0;
     display:inline;
     margin-left: 50%;
@@ -154,7 +152,6 @@ a:hover{
     border-radius: 10px;
     padding: 0;
     color: rgb(238, 0, 0);
-    font-family: "Oswald",sans-serif;
     background-color: rgba(31, 31, 31, 0.911);
     box-shadow: 0 0 100px 80px  rgba(15, 15, 15, 0.842);
 }
@@ -173,7 +170,6 @@ a:hover{
     width: 80%;
 }
 .quote h2{
-    font-family: "Oswald",sans-serif;
     margin: 0;
 }
 label{
@@ -209,13 +205,6 @@ label{
     .quote:last-child{
         grid-column: span 2;
     }
-
-    .quote{
-        align-content: center;
-        text-align: center;
-        margin: auto;
-        width: 80%;
-    }
     .quote h2{
         font-family: "Oswald",sans-serif;
         margin: 0;
@@ -224,40 +213,21 @@ label{
         margin: auto;
     }
     .quote h2,label{
-        display: flex;
-        color: rgb(255, 236, 210);
-        border-radius: 25%;
         background-color: rgba(19, 19, 19, 0.582);
         box-shadow: 0 0 50px 60px  rgba(15, 15, 15, 0.541);
-        width: fit-content;
-        padding: 5px;
     }
     #over h1{
-        display: block;
         height: 90px;
         line-height: 80px;
-        margin: auto;
         width: 740px;
         font-size: 120px;
-        text-align: center;
-        border-radius: 10px;
-        padding: 0;
-        color: rgb(238, 0, 0);
-        font-family: "Oswald",sans-serif;
-        background-color: rgba(31, 31, 31, 0.911);
         box-shadow: 0 0 150px 60px  rgb(15, 15, 15);
     }
     .icon{
-        position: relative;
         width: 150px;
-        z-index: 5;
     }
     #quotes{
-        display: grid;
         width: 70%;
-        height: 700px;
-        margin: auto;
-        grid-template-columns: 1fr 1fr;
     }
     header{
         height: 100px;

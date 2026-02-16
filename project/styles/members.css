@@ -14,7 +14,6 @@ body{
 header, footer{
     box-shadow: 0 0 150px 5px rgb(179, 172, 69);
     max-width: 1000px;
-    display: block;
     margin: auto;
 }
 header{
@@ -25,12 +24,9 @@ header{
     margin-top: 35px;
     justify-content: center;
     align-items: center;
-    font-family: "Oswald",sans-serif;
 }
 header a{
     color: black;
-    text-decoration: none;
-
 }
 header h1{
     font-size: 30px;
@@ -39,6 +35,9 @@ header h1{
     padding: 30px 15px;
 }
 
+a{
+    text-decoration: none;
+}
 
 footer img{
     width: 30px;
@@ -56,7 +55,6 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--yellow-color);
-    font-family: "Oswald",sans-serif;
 }
 footer h2{
     margin: 5px 0px;
@@ -80,7 +78,6 @@ footer h2{
 
 .sources p,.sources a{
     color: var(--dark-orange-color);
-    text-decoration: none;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -118,14 +115,19 @@ main h1{
     color: rgb(255, 137, 59);
     background-color: rgba(0, 0, 0, 0.692);
     box-shadow: 0 0 50px 10px  rgb(15, 15, 15);
-    font-family: "Oswald",sans-serif;
 }
+
+header,
+footer,
+main h1{
+    font-family: "Oswald", sans-serif;
+}
+
 #title{
     position: relative;
 }
 
 #visited{
-    text-decoration: none;
     display: block;
     font-size: 20px;
     position:absolute;
@@ -136,7 +138,6 @@ main h1{
 }
 
 #menu{
-    text-decoration: none;
     display: block;
     font-size: 50px;
     position:absolute;
@@ -165,7 +166,7 @@ main h1{
     padding: 0px 50px;
 }
 ul{
-    list-style-position: none;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -181,7 +182,6 @@ ul{
     max-width: 900px;
     text-align: center;
     color: #dddddd;
-    text-decoration: none;
     background-color: rgba(0, 0, 0, 0.692);
     box-shadow: 0 0 50px 10px  rgb(15, 15, 15);
 }
@@ -245,8 +245,6 @@ ul{
 
 @media (min-width:1000px) {
     #info{
-        background-color: rgba(209, 209, 209, 0.082);
-        display: grid;
         grid-template-columns: 1fr 1fr;
         width: 90%;
         max-width: 1020px;
@@ -258,10 +256,6 @@ ul{
     }
     #info div{
         width:100%;
-        margin: 5px auto;
-        display: block;
-
-        text-align: center;
     }
     .box{
         align-content: center;
@@ -294,7 +288,7 @@ ul{
     }
     nav{
         display: flex;
-    };
+    }
     .footer-icon{
         width:150px;
     }
@@ -303,9 +297,7 @@ ul{
         width: 45px;
     }
     .icon{
-        position: relative;
         width: 150px;
-        z-index: 5;
     }
     #visited{
         text-decoration: none;
@@ -318,15 +310,7 @@ ul{
         transform: translate(0,0);
     }
     main h1{
-        font-size: 60px;
-        text-align: center;
-        margin: 0;
-        margin-top: 30px;
         padding-bottom:0px;
-        color: rgb(255, 137, 59);
-        background-color: rgba(0, 0, 0, 0.692);
-        box-shadow: 0 0 50px 10px  rgb(15, 15, 15);
-        font-family: "Oswald",sans-serif;
     }
     header{
         height: 100px;
