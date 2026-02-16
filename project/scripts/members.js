@@ -56,7 +56,7 @@ cornell.addEventListener("click",()=>{
                 <p>Chris Cornell was one of six children, and born in Seattle. His Dad a pharmacist, and his Mom a self proclaimed psychic. He performed for the first time at a Catholic elementary school singing “One Tin Soldier”. He took piano and guitar lessons.</p>
             </div>
             <div>
-                <img src="images/members/webp/chris-young.jpg" alt="close up of chris cornell in 1982">
+                <img src="images/members/jpg/chris-young.jpg" alt="close up of chris cornell in 1982">
             </div>
             <div class="box">
                 <h2>Born Christopher John Boyle July 20, 1964</h2>
@@ -137,7 +137,7 @@ cory.addEventListener("click",()=>{
                 <p>When Chris was 12 (1976) had daily access and subsequent use of alcohol and marijuana. For two years as a teenager he abused substances and was chronically alone. Taking a break after trying PCP for a year, he had a panic disorder and agoraphobia. Relapsing at 15 (1979) after the break for another year of weed and beer, when then he found and was given Beatles records from his neighbors.He started to connect to people through music. He was contemplating suicide still when his mom bought him a snare drum, this pushed him to want to become a rock musician. Before he was successful, he worked as a busboy, dishwasher, fishmonger, and chef.</p>
             </div>
             <div>
-                <img src="images/members/webp/chris-young.jpg" alt="close up of chris cornell in 1982">
+                <img src="images/members/jpg/chris-young.jpg" alt="close up of chris cornell in 1982">
             </div>
 
             <div>
