@@ -206,8 +206,7 @@ label{
         grid-column: span 2;
     }
     .quote h2{
-        font-family: "Oswald",sans-serif;
-        margin: 0;
+        margin: auto;
     }
     label{
         margin: auto;
